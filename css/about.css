@@ -1,0 +1,31 @@
+@import url(./style.css);
+
+.about-talles{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-talles img{
+    width: 250px;
+    border-radius: 50%;
+    padding: 40px;
+}
+.about-talles hr{
+    width: 100%;
+    margin: 10px 0;
+}
+.about-talles ul{
+    list-style: none;
+    text-align: center;
+}
+.about-talles h1, .about-talles h2{
+    margin: 10px 0;
+    color: #03a2c6;
+}
+.about-talles li{
+    text-transform: none;
+    line-height: 200%;
+    color: #003d52;
+}

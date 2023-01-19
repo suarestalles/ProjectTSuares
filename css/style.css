@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bai Jamjuree", Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+body{
+    background: #010204;
+}
+#principal{
+    max-width: 1024px;
+    margin: 4em auto;
+}
+.background{
+    width: 100%;
+    opacity: .4;
+}
+header{
+    position: fixed;
+}
+.header-top{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #081a24;
+}
+.header-top img{
+    margin: .5em 0 .5em 10em;
+}
+.header-nav{
+    position: absolute;
+    right: 0;
+}
+.header-nav ul{
+    display: flex;
+}
+.header-nav ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+.header-nav ul li a{
+    text-decoration: none;
+    color: #2c4c59;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .9em;
+    transition: color .5s;
+}
+.header-nav ul li:hover a{
+    color: #fff;
+}
+
+.portfolio{
+    margin: 5em;
+    text-align: center;
+}
+.portfolio h1{
+    margin-bottom: 2em;
+}
+.portfolio p{
+    line-height: 2em;
+}
+.portfolio p a{
+    color: #03a2c6;
+    text-decoration: none;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    gap: 3.5em;
+    padding-bottom: 5em;
+}
+.services-card{
+    text-align: center;
+}
+.services-card .service-title{
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: bold;
+    padding: .5em;
+}
+
+.about{
+    background-image: url(../imagens/aboutBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 6em;
+}
+.about h2{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    padding-bottom: 1em;
+    color: #03a2c6;
+}
+.about p{
+    width: 500px;
+    line-height: 1.5em;
+    color: #fff;
+}
+
+#contact{
+    text-align: center;
+    padding: 3em;
+}
+#contact address{
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #003d52;
+    font-style: unset;
+    text-shadow: 0 1px #03a2c6;
+}
+
+.maps{
+    width: 100%;
+}
+
+.rodape{
+    display: block;
+    text-align: center;
+    background: #081a24;
+    padding: 1em;
+    font-size: .8em;
+    letter-spacing: .4em;
+    margin-top: 3em;
+}
+@media (max-width: 981px) {
+    .header-top{
+        flex-direction: column;
+    }
+    .header-top img{
+        width: 125px;
+        margin: 15px 0;
+    }
+    .header-top{
+        width: 100%;
+    }
+    .header-nav{
+        position: relative;
+    }
+    .header-nav ul{
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid #fff;
+    }
+    .header-nav li{
+        display: inline-block;
+        padding: 20px 0;
+        text-align: center;
+    }
+}
