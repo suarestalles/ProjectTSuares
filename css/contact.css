@@ -21,6 +21,7 @@ hr{
     text-transform: capitalize;
 }
 address{
+    margin-top: 10px;
     font-size: 1.5em;
     text-transform: uppercase;
     color: #fff;
@@ -37,18 +38,21 @@ address{
     margin: 10px 0;
 }
 .action-user form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
-    display: grid;
-    gap: 1em;
-    margin-bottom: 2em;
+}
+.id-user{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
 }
 .action-user form label{
     display: none;
 }
-.action-user form input[type="text"]{
-    display: inline-block;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.action-user form input[type="text"], .action-user form input[type="email"]{
     padding: 10px;
     background: #111313;
     border-radius: 5px;
@@ -59,8 +63,6 @@ address{
     height: 100px;
     background: #111313;
     border-radius: 5px;
-    grid-column-start: 1;
-    grid-column-end: 3;
     border: 2px solid #ccc;
     padding: 10px;
     font-size: 18px;
@@ -68,8 +70,6 @@ address{
 }
 .action-user form .button-default{
     font-size: 16px;
-    grid-column-start: 1;
-    grid-column-end: 3;
 }
 .action-user address{
     padding-bottom: 3%;
@@ -100,3 +100,4 @@ address{
     width: 70px;
     padding: 40px;
 }
+

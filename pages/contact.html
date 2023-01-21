@@ -38,37 +38,28 @@
                 <hr>
                 <div class="action-user">
                     <h1>Send me an email</h1>
-                    <form action="https://script.google.com/macros/s/AKfycbxhlDdln8rvOEzDdTCNUD_yNoNfYjfGZZbWD1nu5HF4VVZCcRj7oV-t23bsDSt1q4-w/exec" method="POST">
+                    <form action="https://formsubmit.co/a738610cf15db22243d4e298aa80674e" method="POST">
                 
-                        <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" placeholder="Name">
+                        <div class="id-user">
+                            <label for="nome">Name</label>
+                            <input type="text" name="nome" id="nome" placeholder="Name" required>
+                            
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
                         
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="Email">
-                        
-                        <label for="mensagem">Digite sua mensagem</label>
-                        <textarea name="mensagem" id="mensagem" placeholder="Write your message"></textarea>
+                        <label for="mensagem">Write Your Message</label>
+                        <textarea name="message" id="message" placeholder="Message" required cols="30" rows="10"></textarea>
+                        <input type="hidden" name="_next" value="https://suarestalles.github.io/ProjectTSuares/pages/thanks.html">
                         
                         <input type="submit" value="Send" class="button-default">
                     </form>
                     
                     <address>
-                    
-                        <!--<p>
-                            <span>Endereço</span>
-                            1234 Somewhere Rd. Nashville, TN 00000 United States
-                        </p>-->
-                        
                         <p>
                             <span>Phone:</span>
                             (64) 99614-4837
                         </p>
-
-                        <!--<p>
-                            <span>Email</span>
-                            tallessuares48@gmail.com
-                        </p>-->
-
                     </address>
                 </div>
                 <hr>
@@ -77,22 +68,5 @@
                 Copyright &copy; tsuares
             </footer>
         </div>
-        <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
-        <script>
-            $('form').submit(function(event) {
-                event.preventDefault();
-                $('form [type = "submit"]').val('Sending...').attr('disabled', true);
-                $.ajax({
-                    type: $('form').attr('method'),
-                    url: $('form').attr('action'),
-                    data: $('form').serialize(),
-                    success: function(){
-                        alert('Email successfully sent!');
-                        $('form').trigger('reset');
-                        $('form [type = "submit"]').val('Send').attr('disabled', false);
-                    }
-                })
-            })
-        </script>
     </body>
 </html>
