@@ -52,6 +52,9 @@ address{
 .action-user form label{
     display: none;
 }
+.action-user .id-user .name_page{
+    display: none;
+}
 .action-user form input[type="text"], .action-user form input[type="email"]{
     padding: 10px;
     background: #111313;
